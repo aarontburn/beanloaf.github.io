@@ -73,6 +73,9 @@ def main():
 
 
 def doc() -> None:
+    """
+    Shows user all possible commands.
+    """
     OPTION("To generate the song list, type in, 'generate'.")
     OPTION("To regenerate the song list, type in, 'regenerate'.")
     OPTION("To delete the song list, type in, 'deleteAll'.")
@@ -110,7 +113,7 @@ def hasAuth() -> bool:
     if not os.path.exists("auth.json"):
         WARN("WARNING: auth.json not found. Generating file; please update auth.json with the proper credentials, then re-run the program.")
         with open("auth.json", "a+") as d:
-            d.write('[{"cid": "CLIENT_ID","cs": "CLIENT_SECRET"}]')
+            d.write('[\n{\n"cid": "CLIENT_ID",\n"cs": "CLIENT_SECRET"\n}\n]')
         return False
     return True
 
@@ -260,7 +263,7 @@ def listSongs() -> None:
 def modifyJson() -> None:
     """
     Creates/updates both 'spotifyReleases.json' and 'songData.json' in stages:
-        - Updates 'spotifyReleases.json' to latest
+        - Updates 'spotifyReleases.json' to latest, then:
         - Updates 'songData.json' based on 'spotifyReleases.json'
     """
     try:
