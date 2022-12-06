@@ -43,7 +43,7 @@ def main():
     if not hasAuth():
         return
 
-    print('\033[95m' + "Program made by @beanloaf to help make updating https://beanloaf.github.io/ easier to update." + '\033[0m')
+    print('\033[95m' + "Program made by @beanloaf to help make https://beanloaf.github.io/ easier to update." + '\033[0m')
     print('\033[95m' + "To list all commands, type in, 'help'." + '\033[0m')
 
     hasNext = True
