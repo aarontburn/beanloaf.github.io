@@ -1,7 +1,5 @@
 # beanloafmusicwebpage
-artist page for @beanloaf
-
-created by @beanloaf
+artist page for @beanloaf by @beanloaf
 
 https://beanloaf.github.io
 
