@@ -1,0 +1,19 @@
+Not Done:
+
+    - Once all songs get approved on all streaming platforms, edit songData.json with
+    the appropiate data and regenerate all song pages
+
+    - You can remove the .html for links to make the url bar look better. Do that and
+    fix all the code that relies on the .html
+
+----------------------------------------------------------------
+Almost Done:
+
+    - maybe find a way to generate a new html page for each release? (Almost done)
+
+
+----------------------------------------------------------------
+Completed:
+
+    - find a way to make custom releases in the library tab (DONE)
+    - fix background size to work on different devices (DONE)

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+
+<head>
+	<meta charset="UTF-8">
+	<title>beanloaf - home</title>
+	<link rel="icon" type="image/x-icon" href="res/favicon.ico">
+	<script type="module" src="script.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<script>
+		$(function () {
+			$("#footer").load("footer.html");
+			$("#header").load("header.html");
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="page-container">
+		<div id="content-wrap">
+			<div id="header"></div>
+
+			<div class="content">
+
+				<h3 style="font-size: 35px; margin: 10px">Latest Release:</h3>
+				<h3 id="latestReleaseName" style="font-size: 30px; margin: 10px"></h3>
+				<br>
+
+				<table class="songPage">
+					<tr>
+						<td>
+							<img id="latestReleaseImg" alt="Reload page!" src="" width=350px />
+						</td>
+
+						<td>
+							<iframe id="latestEmb" src="" width="100%" height="350" frameBorder="0" allowfullscreen=""
+								allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+						</td>
+
+					</tr>
+				</table>
+
+
+				<br>
+
+				<p id="latestReleaseHead" style="margin:10px">Listen now!</p>
+				<!-- This link changes with the release -->
+				<a id="latestReleaseLink" href="">
+					<button id="latestReleaseButton" class="sButton" style="background-color: #5baab8; padding: 0px;">Links</button>
+				</a>
+				<br>
+
+				<br>
+				<br>
+				<p style="margin:10px">Spotify Page: </p>
+				<a href="https://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=ymbI6SPuSoSs1WGvQV93KA"
+					target="_blank">
+					<button class="sButton" style="background-color: #009c53">Spotify</button>
+				</a>
+
+
+				<p style="margin:10px">YouTube Channel: </p>
+				<a href="https://www.youtube.com/@beanloaf" target="_blank">
+					<button class="sButton" style="background-color: #ff2b2b">YouTube</button>
+				</a>
+
+				<p style="margin:10px">Apple Music Page: </p>
+				<a href="https://music.apple.com/us/artist/beanloaf/1579680943" target="_blank">
+					<button class="sButton" style="background-color: #a0a0a0">Apple Music</button>
+				</a>
+
+				<br>
+				<br>
+
+			</div>
+			<br>
+			<br>
+			<br>
+
+			<div id="teaser">
+				<script>Teaser();</script>
+			</div>
+
+			<div id="footer"></div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

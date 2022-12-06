@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Endless Cycle",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b273ed4f8c13449a9aab572a1660",
+        "spotifyURL": "spotify:album:0KzD2GD5sRJTIO97aRl28Q",
+        "youtubeURL": "https://www.youtube.com/watch?v=ah26vXD9U9g",
+        "appleURL": "https://music.apple.com/us/album/endless-cycle-single/1655137843"
+    },
+    {
+        "name": "Sunset",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b2733f02c80e6602eb7469b6936c",
+        "spotifyURL": "spotify:album:3sJnesjZO9lKvdV2thvZVo",
+        "youtubeURL": "https://www.youtube.com/watch?v=VhrX0po9gz8",
+        "appleURL": "https://music.apple.com/us/album/sunset-single/1646435201"
+    },
+    {
+        "name": "Forest Outskirts",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b2735f6f51a1a64ad33c7242cf10",
+        "spotifyURL": "spotify:album:7LaCRNcGs9xxGoEMWJKVkQ",
+        "youtubeURL": "https://www.youtube.com/watch?v=yQJHe0ADhGo",
+        "appleURL": "https://music.apple.com/us/album/forest-outskirts-single/1641705417"
+    },
+    {
+        "name": "Eternity",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b273470df9e56a0c73ad85c5abba",
+        "spotifyURL": "spotify:album:4yxYRppTDPrKzX0uorPri4",
+        "youtubeURL": "https://www.youtube.com/watch?v=MmKnPviPR5E",
+        "appleURL": "https://music.apple.com/us/album/eternity-single/1579680942"
+    },
+    {
+        "name": "Mint",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b27397e89374d4df437c2efc9e9f",
+        "spotifyURL": "spotify:album:4TJFAFO85GoaxGdmwzmyWX",
+        "youtubeURL": "https://www.youtube.com/watch?v=claJMK77Tcc",
+        "appleURL": "N/A"
+    },
+    {
+        "name": "Flora",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b273fac59c75c5bf4a0cea14e4ce",
+        "spotifyURL": "spotify:album:7rZtqEp8S32laKyTvT4CMJ",
+        "youtubeURL": "https://www.youtube.com/watch?v=3ce5ewgxeRs",
+        "appleURL": "N/A"
+    },
+    {
+        "name": "Cascade",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b2738114d731423bef8c8084e6b7",
+        "spotifyURL": "spotify:album:1Y2Hh9M2L6oTQCxqi68nel",
+        "youtubeURL": "https://www.youtube.com/watch?v=gAknC6EOXVw",
+        "appleURL": "N/A"
+    },
+    {
+        "name": "Trees",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b273c397751fe5f83d02a5e14a6e",
+        "spotifyURL": "spotify:album:6SpvbtyFQ6ej4QokYLeMcu",
+        "youtubeURL": "https://www.youtube.com/watch?v=JNlHrxoyBHU",
+        "appleURL": "N/A"
+    }
+]

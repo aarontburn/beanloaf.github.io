@@ -1,0 +1,21 @@
+<div class="header">
+
+    <h1 style="font-size: 50px;">beanloaf</h1>
+    <h2 id="pageTitle" style="font-size: 35px; text-align: center"></h2>
+
+    <ul class="nav">
+        <li><a href="/index">home</a></li>
+        <li><a href="/library">library</a></li>
+        <li><a href="/music-usage">usage</a></li>
+        <li><a href="/contact">contact</a></li>
+    </ul>
+    <p style="font-size: 15px;">Note: this website is still under construction. There may be broken links.</p>
+
+</div>
+
+<script>
+    title = document.title.split("-").pop();
+
+    let s = `<h2 id="pageTitle" style="font-size: 35px; text-align: center">${title}</h2>`;
+    document.getElementById("pageTitle").insertAdjacentHTML("beforeend", s);
+</script>

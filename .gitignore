@@ -1,0 +1,5 @@
+
+*.vsidx
+.vscode/
+auth.json
+.cache

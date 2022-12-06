@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>beanloaf - library</title>
+    <link rel="icon" type="image/x-icon" href="res/favicon.ico">
+	<script type="module" src="script.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
+
+
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="header"></div>
+
+            <div class="content">
+
+                <h3>Here you'll find all my releases on Spotify.</h3>
+                <p>Click to find links to streaming platforms:</p>
+
+                <table class="library" id="discography">
+                    <!--Everything inside here is generated via Javascript-->
+                </table>
+
+
+                <br>
+                <h3 style="margin:0px">Bonuses:</h3>
+                <p>Here are releases that aren't on Spotify. Click images to view!</p>
+
+                <table class="library" id="bonus">
+                    <!--Everything inside here is generated via Javascript-->
+                </table>
+            </div>
+
+            <div id="footer"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
