@@ -37,7 +37,9 @@ ARTIST_ID = "7ibBcoqSGVKT1sBynZvy5e"  # beanloaf
 
 
 def main():
-    initialize()
+    if not hasAuth():
+        return
+
     OPTION("To generate the song list, type in, 'generate'.")
     OPTION("To regenerate the song list, type in, 'regenerate'.")
     OPTION("To delete the song list, type in, 'deleteAll'.")
@@ -60,8 +62,6 @@ def main():
             listSongs()
         elif d == "json":
             createJson()
-        elif d == "test":
-            test()
         elif d == "exit":
             return
 
@@ -69,26 +69,18 @@ def main():
             ERROR("Invalid command.")
 
 
-def initialize():
+def hasAuth() -> bool:
+    """
+    Checks whether the user has auth.json. 
+    If file not found, generates a empty auth.json and returns False. Else, returns true.
+    """
     if not os.path.exists("auth.json"):
-        WARN("auth.json not found. Generating file; please update auth.json with the proper credentials.")
+        WARN("WARNING: auth.json not found. Generating file; please update auth.json with the proper credentials, then re-run the program.")
         with open("auth.json", "a+") as d:
             d.write('[{"cid": "CLIENT_ID","cs": "CLIENT+SECRET"}]')
+        return False
+    return True
 
-
-def test():
-    with open('auth.json', 'r') as f:
-        auth = json.load(f)[0]
-
-    client_credentials_manager = SpotifyClientCredentials(
-        client_id=auth["cid"], client_secret=auth["cs"])
-    sp = s.Spotify(client_credentials_manager=client_credentials_manager)
-
-    results = sp.artist_albums(
-        'spotify:artist:' + ARTIST_ID)
-
-    with open("spotfiyReleases.json", "a+") as a:
-        a.write(json.dumps(results))
 
 
 def generateSongs():
