@@ -14,6 +14,9 @@
 # Verify the new .html file have correct information
 # Push to Github to see changes
 #
+# ----------Updating After a New Release----------
+# After a new release is posted on Spotify, type in 'update' and follow the prompts.
+#
 # ----------Regenerating Pages----------
 # After updating the template, type in "regenerate", when prompted, to re-create all the song pages.
 #
@@ -40,19 +43,17 @@ def main():
     if not hasAuth():
         return
 
-    OPTION("To generate the song list, type in, 'generate'.")
-    OPTION("To regenerate the song list, type in, 'regenerate'.")
-    OPTION("To delete the song list, type in, 'deleteAll'.")
-    OPTION("To list all the songs, type in, 'list'")
-    OPTION("To generate the song json, type in 'json'.")
-    OPTION("To exit, type in 'exit'")
+    print('\033[95m' + "Program made by @beanloaf to make updating https://beanloaf.github.io/ easier to update." + '\033[0m')
+    print('\033[95m' + "To list all commands, type in, 'help'." + '\033[0m')
 
     hasNext = True
 
     while hasNext:
         d = input('\033[96m' + "Enter a command: " + '\033[0m')
-        if d == "generate":
-            generateSongs()
+        if d == "help":
+            doc()
+        elif d == "generate":
+            generateSongs(True)
         elif d == "regenerate":
             deleteAllSongs()
             generateSongs()
@@ -61,12 +62,44 @@ def main():
         elif d == "list":
             listSongs()
         elif d == "json":
-            createJson()
+            modifyJson()
+        elif d == "update":
+            update()
         elif d == "exit":
             return
 
         else:
             ERROR("Invalid command.")
+
+
+def doc() -> None:
+    OPTION("To generate the song list, type in, 'generate'.")
+    OPTION("To regenerate the song list, type in, 'regenerate'.")
+    OPTION("To delete the song list, type in, 'deleteAll'.")
+    OPTION("To list all the songs, type in, 'list'")
+    OPTION("To generate the song json, type in, 'json'.")
+    OPTION("To update for a new release, do 'update'.")
+    OPTION("To exit, type in, 'exit'")
+
+
+def update() -> None:
+    """
+    When a new song releases on Spotify, updates songData.json and generates page.
+    """
+    modifyJson()
+    WARN("Manually update and verify that all fields in songData.json is correct, then type in 'continue' to generate the pages.")
+    hasNext = True
+
+    while hasNext:
+        d = input(
+            '\033[96m' + "Enter 'continue' to proceed, or 'exit' to return to main menu: " + '\033[0m')
+
+        if d == "continue":
+            generateSongs(False)
+        elif d == "exit":
+            return
+        else:
+            ERROR("Invalid input.")
 
 
 def hasAuth() -> bool:
@@ -82,8 +115,10 @@ def hasAuth() -> bool:
     return True
 
 
-
-def generateSongs():
+def generateSongs(debug: bool) -> None:
+    """
+    Generates song pages based on data in songData.json
+    """
     content = ""
 
     if not os.path.exists("songs/spotifyReleases.json"):
@@ -121,15 +156,6 @@ def generateSongs():
             with open("songs/templateSong.html") as h:
                 content = h.read()
 
-            try:
-                newPage = open("songs/-" + songName + ".html", "x")
-
-            except:
-                WARN("Skipping " + songName +
-                     ", since a page for it already exists.")
-                numGeneratedPages -= 1
-                continue
-
             for j in range(len(spotifyData["items"])):
                 if spotifyData["items"][i]["name"] == songData[j]["name"]:
                     songName = songData[j]["name"]
@@ -137,6 +163,16 @@ def generateSongs():
                     spotifyLink = songData[j]["spotifyURL"]
                     youtubeLink = songData[j]["youtubeURL"]
                     appleLink = songData[j]["appleURL"]
+
+            try:
+                newPage = open("songs/-" + songName + ".html", "x")
+
+            except:
+                if debug:
+                    WARN("Skipping " + songName +
+                         ", since a page for it already exists.")
+                numGeneratedPages -= 1
+                continue
 
             if spotifyData["items"][i]["total_tracks"] > 4:
                 albumType = "Album"
@@ -172,6 +208,9 @@ def generateSongs():
 
 
 def deleteAllSongs() -> None:
+    """
+    Deletes all auto-generated .html pages, denoted with a '-' before the song name in the 'songs/' directory.
+    """
     WARN("Are you sure you want to delete song htmls? All manually inputed song data will be lost.")
     d = input(
         '\033[96m' + "Type in 'deleteAll confirm' to proceed: " + '\033[0m')
@@ -188,6 +227,9 @@ def deleteAllSongs() -> None:
 
 
 def listSongs() -> None:
+    """
+    Displays all songs listed under the 'songs/' directory, inside 'songData.json', or inside 'spotifyReleases.json'.
+    """
     OPTION("To list all songs that have a .html page, type in '1'.")
     OPTION("To list all songs listed in the Spotify .json, type in '2'.")
     OPTION("To list all songs listed in songData.json, type in '3'.")
@@ -215,7 +257,12 @@ def listSongs() -> None:
     SUCCESS("Finished listing.")
 
 
-def createJson() -> None:
+def modifyJson() -> None:
+    """
+    Creates/updates both 'spotifyReleases.json' and 'songData.json' in stages:
+        - Updates 'spotifyReleases.json' to latest
+        - Updates 'songData.json' based on 'spotifyReleases.json'
+    """
     try:
         with open('auth.json', 'r') as f:
             auth = json.load(f)
@@ -320,6 +367,9 @@ or delete songData.json and run 'json' to regenerate file.")
                     str(numAddedEntries) + " entries.")
 
 
+"""
+These functions are for color-coding messages in the terminal for clarity.
+"""
 def WARN(s: str) -> None:
     print('\033[93m' + s + '\033[0m')
 
@@ -338,7 +388,7 @@ def ERROR(s: str) -> None:
 
 """
 Console color guide:
-'\033[0m' = Purple ish
+'\033[95m' = Purple ish
 '\033[94m' = Blue
 '\033[96m' = Cyan/Light Blue
 '\033[92m' = Green
