@@ -77,7 +77,7 @@ def hasAuth() -> bool:
     if not os.path.exists("auth.json"):
         WARN("WARNING: auth.json not found. Generating file; please update auth.json with the proper credentials, then re-run the program.")
         with open("auth.json", "a+") as d:
-            d.write('[{"cid": "CLIENT_ID","cs": "CLIENT+SECRET"}]')
+            d.write('[{"cid": "CLIENT_ID","cs": "CLIENT_SECRET"}]')
         return False
     return True
 
