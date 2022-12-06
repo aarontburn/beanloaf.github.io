@@ -17,18 +17,7 @@ function onWindowLoad() {
 function getLatestRelease() {
     const latestRelease = responseJson.items[0];
 
-    var releaseURL = `https://beanloaf.github.io/songs/-${latestRelease.name}`
-    if (urlExists(releaseURL)) {
-        document.getElementById("latestReleaseLink").href = `songs/-${latestRelease.name}`;
-    } else { // Fallback for if a .html page hasn't been generated for the release yet.
-        console.log("Error; release page for", latestRelease.name, "hasn't been created yet.");
-        document.getElementById("latestReleaseLink").href = latestRelease.uri;
-        document.getElementById("latestReleaseButton").textContent = "Spotify";
-        document.getElementById("latestReleaseHead").textContent = "Listen now!";
-
-
-    }
-
+    document.getElementById("latestReleaseLink").href = `songs/-${latestRelease.name}`;
     document.getElementById("latestReleaseName").textContent = latestRelease.name;
     document.getElementById("latestReleaseImg").src = latestRelease.images[0].url;
     document.getElementById("latestEmb").src = `https://open.spotify.com/embed/album/${latestRelease.id}?utm_source=generator`;
@@ -43,20 +32,12 @@ function getAllReleases() {
     // Handles the releases from Spotify
     let s = "<tr>";
     for (let i = 0; i < responseJson.items.length; i++) {
-        var releaseURL = `https://beanloaf.github.io/songs/-${responseJson.items[i].name}`
         if (i % itemsPerRows == 0 && i != 0) {
             s += "</tr><tr>"
         }
         s += `<td><h3 style='font - size: 20px; margin: 10px'> ${responseJson.items[i].name} </h3>`;
 
-        if (urlExists(releaseURL)) {
-            s += `<a href='songs/-${responseJson.items[i].name}'><img src='${responseJson.items[i].images[0].url}' width=275px /></a>`;
-
-        } else {
-            console.log("Error: release page for", responseJson.items[i].name, "hasn't been created yet.");
-            s += `<a href='${responseJson.items[i].uri}'><img src='${responseJson.items[i].images[0].url}' width=275px /></a>`;
-
-        }
+        s += `<a href='songs/-${responseJson.items[i].name}'><img src='${responseJson.items[i].images[0].url}' width=275px /></a>`;
     }
 
     document.getElementById("discography").insertAdjacentHTML("beforeend", s);
@@ -118,17 +99,5 @@ class BonusTrack {
         bonusList.push(this);
     }
 }
-
-function urlExists(url) {
-    var http = new XMLHttpRequest();
-    http.open('HEAD', url, false);
-    try {
-        http.send();
-    } catch {
-        //pass
-    }
-    return http.status != 404;
-}
-
 
 onWindowLoad();
