@@ -3,3 +3,5 @@
 .vscode/
 auth.json
 .cache
+venv/
+test.py

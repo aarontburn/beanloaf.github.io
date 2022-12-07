@@ -31,8 +31,13 @@
 # ------------------------------------------
 import json
 import os
+# Spotify API
 import spotipy as s
 from spotipy.oauth2 import SpotifyClientCredentials
+# Apple Music API
+import applemusicpy
+# YouTube API
+from pyyoutube import Api as pyy
 
 
 debugMode = False
@@ -114,7 +119,7 @@ def hasAuth() -> bool:
     if not os.path.exists("auth.json"):
         WARN("WARNING: auth.json not found. Generating file; please update auth.json with the proper credentials, then re-run the program.")
         with open("auth.json", "a+") as d:
-            d.write('[\n{\n"cid": "CLIENT_ID",\n"cs": "CLIENT_SECRET"\n}\n]')
+            d.write('{\n"cid": "CLIENT_ID",\n"cs": "CLIENT_SECRET"\n}')
         return False
     return True
 
@@ -276,44 +281,93 @@ def modifyJson() -> None:
 
     # Uses Spotify API
     client_credentials_manager = SpotifyClientCredentials(
-        client_id=auth[0]["cid"], client_secret=auth[0]["cs"])
-    sp = s.Spotify(client_credentials_manager=client_credentials_manager)
+        client_id=auth["spotify"][0]["cid"], client_secret=auth["spotify"][0]["cs"])
+    sApi = s.Spotify(client_credentials_manager=client_credentials_manager)
 
-    results = sp.artist_albums(
+    sResults = sApi.artist_albums(
         'spotify:artist:' + ARTIST_ID)
+
+    # Uses YouTube API
+    yApi = pyy(api_key=auth["youtube"][0]["key"])
+
+    yResults = yApi.get_playlist_items(playlist_id="PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", count=None)
+
+
 
     if not os.path.exists("songs/spotifyReleases.json"):
         WARN("spotifyReleases.json doesn't exist; creating new file...")
-        with open("songs/spotifyReleases.json", "a+") as a:
-            a.write(json.dumps(results))
     elif os.path.exists("songs/spotifyReleases.json"):
         WARN("Found spotifyReleases.json. Updating the file...")
         os.remove("songs/spotifyReleases.json")
-        with open("songs/spotifyReleases.json", "a+") as a:
-            a.write(json.dumps(results))
+    with open("songs/spotifyReleases.json", "a+") as a:
+        a.write(json.dumps(sResults))
+
+    # Make sure the release is inside the Music playlist on YT
+    if not os.path.exists("songs/youtubeReleases.json"):
+        WARN("youtubeReleases.json doesn't exist; creating new file...")
+    elif os.path.exists("songs/spotifyReleases.json"):
+        WARN("Found youtubeReleases.json. Updating the file...")
+        os.remove("songs/youtubeReleases.json")
+    with open("songs/youtubeReleases.json", "a+") as a:
+        a.write(json.dumps(yResults.to_dict()))    
 
     if not os.path.exists("songs/songData.json"):
+        yHasSong = False
         WARN("songData.json doesn't exist; creating new file...")
         d = open("songs/songData.json", "a+")
         d.write("[")
+
+        # First object
+        for i in range(len(yResults.items)):
+            songName = sResults["items"][0]["name"]
+            songImg = sResults["items"][0]["images"][0]["url"]
+            spotifyURL = sResults["items"][0]["uri"]
+            youtubeURL = "https://youtube.com/@beanloaf"
+            appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
+            if sResults["items"][0]["name"] in yResults.items[i].to_dict()["snippet"]["title"]:
+                youtubeURL = "https://youtu.be/" + yResults.items[i].to_dict()["contentDetails"]["videoId"]
+                yHasSong = True
+                break
+                
+        if not yHasSong:
+            ERROR("ERROR: " + sResults["items"][0]["name"] + " not found in the YouTube playlist 'Music'. Defaulting to the channel page...")
         song = {
-            "name": results["items"][0]["name"],
-            "songImg": results["items"][0]["images"][0]["url"],
-            "spotifyURL": results["items"][0]["uri"],
-            "youtubeURL": "",
-            "appleURL": ""
+            "name": songName,
+            "songImg": songImg,
+            "spotifyURL": spotifyURL,
+            "youtubeURL": youtubeURL,
+            "appleURL": appleURL
         }
         d.write(json.dumps(song))
-        for i in range(1, len(results["items"])):
+                
+        
+        for i in range(1, len(sResults["items"])):
+            yHasSong = False
+
             d.write(",")
+            songName = sResults["items"][i]["name"]
+            songImg = sResults["items"][i]["images"][0]["url"]
+            spotifyURL = sResults["items"][i]["uri"]
+            youtubeURL = "https://youtube.com/@beanloaf"
+            appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
+            for j in range(len(yResults.items)):
+                if sResults["items"][i]["name"] in yResults.items[j].to_dict()["snippet"]["title"]:
+                    youtubeURL = "https://youtu.be/" + yResults.items[j].to_dict()["contentDetails"]["videoId"]
+                    yHasSong = True
+                    break
+
+            if not yHasSong:
+                ERROR("ERROR: " + sResults["items"][i]["name"] + " not found in the YouTube playlist 'Music'. Defaulting to the channel page...")
+
             song = {
-                "name": results["items"][i]["name"],
-                "songImg": results["items"][i]["images"][0]["url"],
-                "spotifyURL": results["items"][i]["uri"],
-                "youtubeURL": "",
-                "appleURL": ""
+                "name": songName,
+                "songImg": songImg,
+                "spotifyURL": spotifyURL,
+                "youtubeURL": youtubeURL,
+                "appleURL": appleURL
             }
             d.write(json.dumps(song))
+
         d.write("]")
         d.close()
         SUCCESS("Finished creating songData.json")
@@ -329,36 +383,41 @@ def modifyJson() -> None:
 or delete songData.json and run 'json' to regenerate file.")
             return
 
-        for i in range(len(results["items"])):
+        for i in range(len(sResults["items"])):
             foundMatch = False
 
             for j in range(len(_data)):
                 if debugMode:
-                    print("Comparing", results["items"][i]
+                    print("Comparing", sResults["items"][i]
                           ["name"], "and", _data[j]["name"])
 
-                if results["items"][i]["name"] == _data[j]["name"]:
+                if sResults["items"][i]["name"] == _data[j]["name"]:
                     foundMatch = True
+                    break
 
             if not foundMatch:
-                WARN(results["items"][i]["name"] +
+                WARN(sResults["items"][i]["name"] +
                      " not found in songData.json. Attempting to add entry...")
                 numAddedEntries += 1
-                _song = {
-                    "name": results["items"][i]["name"],
-                    "songImg": results["items"][i]["images"][0]["url"],
-                    "spotifyURL": results["items"][i]["uri"],
-                    "youtubeURL": "",
-                    "appleURL": ""
-                }
 
-                songDatab = open("songs/songData.json", "ab+")
-                songDatab.seek(-1, os.SEEK_END)
-                songDatab.truncate()  # removes the last character of the .json file; should be a ']'
-                songDatab.close()
+                for j in range(len(yResults.items)):
+                    if sResults["items"][i]["name"] in yResults.items[j].to_dict()["snippet"]["title"]:
+                        _song = {
+                            "name": sResults["items"][i]["name"],
+                            "songImg": sResults["items"][i]["images"][0]["url"],
+                            "spotifyURL": sResults["items"][i]["uri"],
+                            "youtubeURL": "https://youtu.be/" + yResults.items[j].to_dict()["contentDetails"]["videoId"],
+                            "appleURL": ""
+                        }
 
-                songData = open("songs/songData.json", "a+")
-                songData.write("," + json.dumps(_song))
+                        songDatab = open("songs/songData.json", "ab+")
+                        songDatab.seek(-1, os.SEEK_END)
+                        songDatab.truncate()  # removes the last character of the .json file; should be a ']'
+                        songDatab.close()
+
+                        songData = open("songs/songData.json", "a+")
+                        songData.write("," + json.dumps(_song))
+                        break
         try:
             songData.write("]")
             songData.close()
