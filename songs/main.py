@@ -98,6 +98,7 @@ def update() -> None:
             '\033[96m' + "Enter 'continue' to proceed, or 'exit' to return to main menu: " + '\033[0m')
 
         if d == "continue":
+            hasNext = False
             generateSongs(False)
         elif d == "exit":
             return
@@ -108,7 +109,7 @@ def update() -> None:
 def hasAuth() -> bool:
     """
     Checks whether the user has auth.json. 
-    If file not found, generates a empty auth.json and returns False. Else, returns true.
+    If file not found, generates a empty auth.json and returns false. Else, returns true.
     """
     if not os.path.exists("auth.json"):
         WARN("WARNING: auth.json not found. Generating file; please update auth.json with the proper credentials, then re-run the program.")
