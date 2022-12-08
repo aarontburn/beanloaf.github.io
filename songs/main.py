@@ -43,6 +43,9 @@ from pyyoutube import Api as pyy
 debugMode = False
 ARTIST_ID = "7ibBcoqSGVKT1sBynZvy5e"  # beanloaf
 
+# music playlist of beanloaf
+YOUTUBE_PLAYLIST_ID = "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3"
+
 
 def main():
     if not hasAuth():
@@ -128,7 +131,7 @@ def hasAuth() -> bool:
                     "key": "YOUTUBE_API_KEY"
                 }
             }
-            
+
             d.write(json.dumps(s))
         return False
     return True
@@ -300,9 +303,8 @@ def modifyJson() -> None:
     # Uses YouTube API
     yApi = pyy(api_key=auth["youtube"]["key"])
 
-    yResults = yApi.get_playlist_items(playlist_id="PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", count=None)
-
-
+    yResults = yApi.get_playlist_items(
+        playlist_id=YOUTUBE_PLAYLIST_ID, count=None)
 
     if not os.path.exists("songs/spotifyReleases.json"):
         WARN("spotifyReleases.json doesn't exist; creating new file...")
@@ -319,7 +321,7 @@ def modifyJson() -> None:
         WARN("Found youtubeReleases.json. Updating the file...")
         os.remove("songs/youtubeReleases.json")
     with open("songs/youtubeReleases.json", "a+") as a:
-        a.write(json.dumps(yResults.to_dict()))    
+        a.write(json.dumps(yResults.to_dict()))
 
     if not os.path.exists("songs/songData.json"):
         yHasSong = False
@@ -335,12 +337,14 @@ def modifyJson() -> None:
             youtubeURL = "https://youtube.com/@beanloaf"
             appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
             if sResults["items"][0]["name"] in yResults.items[i].to_dict()["snippet"]["title"]:
-                youtubeURL = "https://youtu.be/" + yResults.items[i].to_dict()["contentDetails"]["videoId"]
+                youtubeURL = "https://youtu.be/" + \
+                    yResults.items[i].to_dict()["contentDetails"]["videoId"]
                 yHasSong = True
                 break
-                
+
         if not yHasSong:
-            ERROR("ERROR: " + sResults["items"][0]["name"] + " not found in the YouTube playlist 'Music'. Defaulting to the channel page...")
+            ERROR("ERROR: " + sResults["items"][0]["name"] +
+                  " not found in the YouTube playlist 'Music'. Defaulting to the channel page...")
         song = {
             "name": songName,
             "songImg": songImg,
@@ -349,8 +353,7 @@ def modifyJson() -> None:
             "appleURL": appleURL
         }
         d.write(json.dumps(song))
-                
-        
+
         for i in range(1, len(sResults["items"])):
             yHasSong = False
 
@@ -362,12 +365,15 @@ def modifyJson() -> None:
             appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
             for j in range(len(yResults.items)):
                 if sResults["items"][i]["name"] in yResults.items[j].to_dict()["snippet"]["title"]:
-                    youtubeURL = "https://youtu.be/" + yResults.items[j].to_dict()["contentDetails"]["videoId"]
+                    youtubeURL = "https://youtu.be/" + \
+                        yResults.items[j].to_dict(
+                        )["contentDetails"]["videoId"]
                     yHasSong = True
                     break
 
             if not yHasSong:
-                ERROR("ERROR: " + sResults["items"][i]["name"] + " not found in the YouTube playlist 'Music'. Defaulting to the channel page...")
+                ERROR("ERROR: " + sResults["items"][i]["name"] +
+                      " not found in the YouTube playlist 'Music'. Defaulting to the channel page...")
 
             song = {
                 "name": songName,
