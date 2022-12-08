@@ -1,4 +1,4 @@
-import responseJson from '/songs/spotifyReleases.json' assert {type: 'json'};
+import responseJson from '/library/spotifyReleases.json' assert {type: 'json'};
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
@@ -17,7 +17,7 @@ function onWindowLoad() {
 function getLatestRelease() {
     const latestRelease = responseJson.items[0];
 
-    document.getElementById("latestReleaseLink").href = `songs/-${latestRelease.name}`;
+    document.getElementById("latestReleaseLink").href = `library/-${latestRelease.name}`;
     document.getElementById("latestReleaseName").textContent = latestRelease.name;
     document.getElementById("latestReleaseImg").src = latestRelease.images[0].url;
     document.getElementById("latestEmb").src = `https://open.spotify.com/embed/album/${latestRelease.id}?utm_source=generator`;
@@ -37,7 +37,7 @@ function getAllReleases() {
         }
         s += `<td><h3 style='font - size: 20px; margin: 10px'> ${responseJson.items[i].name} </h3>`;
 
-        s += `<a href='songs/-${responseJson.items[i].name}'><img src='${responseJson.items[i].images[0].url}' width=275px /></a>`;
+        s += `<a href='library/-${responseJson.items[i].name}'><img src='${responseJson.items[i].images[0].url}' width=275px /></a>`;
     }
 
     document.getElementById("discography").insertAdjacentHTML("beforeend", s);

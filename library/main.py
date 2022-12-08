@@ -141,17 +141,17 @@ def generateSongs(debug: bool) -> None:
     """
     content = ""
 
-    if not os.path.exists("songs/spotifyReleases.json"):
+    if not os.path.exists("library/spotifyReleases.json"):
         ERROR("'spotifyReleases.json' not found inside directory 'songs'. Exiting...")
         return
 
-    if not os.path.exists("songs/songData.json"):
+    if not os.path.exists("library/songData.json"):
         ERROR("'songData.json' not found inside directory 'songs'. Exiting...")
         return
 
-    with open('songs/spotifyReleases.json', 'r') as f:
+    with open('library/spotifyReleases.json', 'r') as f:
         spotifyData = json.load(f)
-    with open('songs/songData.json', 'r') as f:
+    with open('library/songData.json', 'r') as f:
         songData = json.load(f)
 
     numGeneratedPages = len(spotifyData["items"])
@@ -173,7 +173,7 @@ def generateSongs(debug: bool) -> None:
             releaseDate = "N/A"
             # --------------
 
-            with open("songs/templateSong.html") as h:
+            with open("library/templateSong.html") as h:
                 content = h.read()
 
             for j in range(len(spotifyData["items"])):
@@ -185,7 +185,7 @@ def generateSongs(debug: bool) -> None:
                     appleLink = songData[j]["appleURL"]
 
             try:
-                newPage = open("songs/-" + songName + ".html", "x")
+                newPage = open("library/-" + songName + ".html", "x")
 
             except:
                 if debug:
@@ -229,15 +229,15 @@ def generateSongs(debug: bool) -> None:
 
 def deleteAllSongs() -> None:
     """
-    Deletes all auto-generated .html pages, denoted with a '-' before the song name in the 'songs/' directory.
+    Deletes all auto-generated .html pages, denoted with a '-' before the song name in the 'library/' directory.
     """
     WARN("Are you sure you want to delete song htmls? All manually inputed song data will be lost.")
     d = input(
         '\033[96m' + "Type in 'deleteAll confirm' to proceed: " + '\033[0m')
 
     if d == "deleteAll confirm":
-        for filename in os.listdir('songs'):
-            path = os.path.join('songs', filename)
+        for filename in os.listdir('library'):
+            path = os.path.join('library', filename)
             if filename[0] == "-":
                 print("Deleting", filename)
                 os.remove(path)
@@ -248,7 +248,7 @@ def deleteAllSongs() -> None:
 
 def listSongs() -> None:
     """
-    Displays all songs listed under the 'songs/' directory, inside 'songData.json', or inside 'spotifyReleases.json'.
+    Displays all songs listed under the 'library/' directory, inside 'songData.json', or inside 'spotifyReleases.json'.
     """
     OPTION("To list all songs that have a .html page, type in '1'.")
     OPTION("To list all songs listed in the Spotify .json, type in '2'.")
@@ -257,17 +257,17 @@ def listSongs() -> None:
     d = input("Enter a number: ")
 
     if d == "1":
-        for filename in os.listdir('songs'):
+        for filename in os.listdir('library'):
             if filename[0] == "-":
                 print(filename)
     elif d == "2":
-        with open('songs/spotifyReleases.json', 'r') as d:
+        with open('library/spotifyReleases.json', 'r') as d:
             _data = json.load(d)
 
         for i in range(len(_data["items"])):
             print(_data["items"][i]["name"])
     elif d == "3":
-        with open('songs/songData.json', 'r') as f:
+        with open('library/songData.json', 'r') as f:
             data = json.load(f)
         for i in range(len(data)):
             print(data[i]["name"])
@@ -304,27 +304,27 @@ def modifyJson() -> None:
     yResults = yApi.get_playlist_items(
         playlist_id=YOUTUBE_PLAYLIST_ID, count=None)
 
-    if not os.path.exists("songs/spotifyReleases.json"):
+    if not os.path.exists("library/spotifyReleases.json"):
         WARN("spotifyReleases.json doesn't exist; creating new file...")
-    elif os.path.exists("songs/spotifyReleases.json"):
+    elif os.path.exists("library/spotifyReleases.json"):
         WARN("Found spotifyReleases.json. Updating the file...")
-        os.remove("songs/spotifyReleases.json")
-    with open("songs/spotifyReleases.json", "a+") as a:
+        os.remove("library/spotifyReleases.json")
+    with open("library/spotifyReleases.json", "a+") as a:
         a.write(json.dumps(sResults))
 
     # Make sure the release is inside the Music playlist on YT
-    if not os.path.exists("songs/youtubeReleases.json"):
+    if not os.path.exists("library/youtubeReleases.json"):
         WARN("youtubeReleases.json doesn't exist; creating new file...")
-    elif os.path.exists("songs/spotifyReleases.json"):
+    elif os.path.exists("library/spotifyReleases.json"):
         WARN("Found youtubeReleases.json. Updating the file...")
-        os.remove("songs/youtubeReleases.json")
-    with open("songs/youtubeReleases.json", "a+") as a:
+        os.remove("library/youtubeReleases.json")
+    with open("library/youtubeReleases.json", "a+") as a:
         a.write(json.dumps(yResults.to_dict()))
 
-    if not os.path.exists("songs/songData.json"):
+    if not os.path.exists("library/songData.json"):
         yHasSong = False
         WARN("songData.json doesn't exist; creating new file...")
-        d = open("songs/songData.json", "a+")
+        d = open("library/songData.json", "a+")
         d.write("[")
 
         # First object
@@ -386,11 +386,11 @@ def modifyJson() -> None:
         d.close()
         SUCCESS("Finished creating songData.json")
 
-    elif os.path.exists("songs/songData.json"):
+    elif os.path.exists("library/songData.json"):
         numAddedEntries = 0
         WARN("songData.json exists; reading file...")
         try:
-            with open('songs/songData.json', 'r') as g:
+            with open('library/songData.json', 'r') as g:
                 _data = json.load(g)
         except:
             ERROR("ERROR: songData.json has invald formatting. Fix formatting error, \
@@ -424,12 +424,12 @@ or delete songData.json and run 'json' to regenerate file.")
                             "appleURL": ""
                         }
 
-                        songDatab = open("songs/songData.json", "ab+")
+                        songDatab = open("library/songData.json", "ab+")
                         songDatab.seek(-1, os.SEEK_END)
                         songDatab.truncate()  # removes the last character of the .json file; should be a ']'
                         songDatab.close()
 
-                        songData = open("songs/songData.json", "a+")
+                        songData = open("library/songData.json", "a+")
                         songData.write("," + json.dumps(_song))
                         break
         try:
