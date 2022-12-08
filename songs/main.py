@@ -34,8 +34,6 @@ import os
 # Spotify API
 import spotipy as s
 from spotipy.oauth2 import SpotifyClientCredentials
-# Apple Music API
-import applemusicpy
 # YouTube API
 from pyyoutube import Api as pyy
 
