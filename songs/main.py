@@ -119,7 +119,17 @@ def hasAuth() -> bool:
     if not os.path.exists("auth.json"):
         WARN("WARNING: auth.json not found. Generating file; please update auth.json with the proper credentials, then re-run the program.")
         with open("auth.json", "a+") as d:
-            d.write('{\n"cid": "CLIENT_ID",\n"cs": "CLIENT_SECRET"\n}')
+            s = {
+                "spotify": {
+                    "id": "SPOTIFY_ID",
+                    "secret": "SPOTIFY_SECRET"
+                },
+                "youtube": {
+                    "key": "YOUTUBE_API_KEY"
+                }
+            }
+            
+            d.write(json.dumps(s))
         return False
     return True
 
@@ -281,14 +291,14 @@ def modifyJson() -> None:
 
     # Uses Spotify API
     client_credentials_manager = SpotifyClientCredentials(
-        client_id=auth["spotify"][0]["cid"], client_secret=auth["spotify"][0]["cs"])
+        client_id=auth["spotify"]["id"], client_secret=auth["spotify"]["secret"])
     sApi = s.Spotify(client_credentials_manager=client_credentials_manager)
 
     sResults = sApi.artist_albums(
         'spotify:artist:' + ARTIST_ID)
 
     # Uses YouTube API
-    yApi = pyy(api_key=auth["youtube"][0]["key"])
+    yApi = pyy(api_key=auth["youtube"]["key"])
 
     yResults = yApi.get_playlist_items(playlist_id="PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", count=None)
 
