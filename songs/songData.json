@@ -42,17 +42,17 @@
         "appleURL": "https://music.apple.com/us/artist/beanloaf/1579680943"
     },
     {
+        "name": "Cascade",
+        "songImg": "https://i.scdn.co/image/ab67616d0000b2738114d731423bef8c8084e6b7",
+        "spotifyURL": "spotify:album:1Y2Hh9M2L6oTQCxqi68nel",
+        "youtubeURL": "https://youtu.be/gAknC6EOXVw",
+        "appleURL": "https://music.apple.com/us/artist/beanloaf/1579680943"
+    },
+    {
         "name": "Trees",
         "songImg": "https://i.scdn.co/image/ab67616d0000b273c397751fe5f83d02a5e14a6e",
         "spotifyURL": "spotify:album:6SpvbtyFQ6ej4QokYLeMcu",
         "youtubeURL": "https://youtu.be/JNlHrxoyBHU",
         "appleURL": "https://music.apple.com/us/artist/beanloaf/1579680943"
-    },
-    {
-        "name": "Cascade",
-        "songImg": "https://i.scdn.co/image/ab67616d0000b2738114d731423bef8c8084e6b7",
-        "spotifyURL": "spotify:album:1Y2Hh9M2L6oTQCxqi68nel",
-        "youtubeURL": "https://youtu.be/gAknC6EOXVw",
-        "appleURL": ""
     }
 ]
