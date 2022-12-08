@@ -1,5 +1,7 @@
-# This program takes data from the Spotify API and generate song pages for them
+# This program takes data from both the Spotify API and YouTube API and generate song pages for them
 # ----------Getting Started----------
+# REQUIREMENTS:
+#   - You will need both a YouTube API key and Spotify API key
 # Run "main.py" and update "auth.json". Then, run "json" when prompted.
 #   - If "songData.json" doesn't exist, it will generate a new .json file
 #   - If "songData.json" DOES exist, it will compare "spotifyReleases.json" to it, and if
