@@ -277,8 +277,8 @@ def listSongs() -> None:
         with open('library/youtubeReleases.json', 'r') as d:
             data = json.load(d)
 
-        for i in range(len(data.items)):
-            print(data.items[i].to_dict()["snippet"]["title"])
+        for i in range(len(data["items"])):
+            print(data["items"][i]["snippet"]["title"])
     elif d == "songData":
         with open('library/songData.json', 'r') as f:
             data = json.load(f)
@@ -313,7 +313,6 @@ def modifyJson() -> None:
 
     # Uses YouTube API
     yApi = pyy(api_key=auth["youtube"]["key"])
-
     yResults = yApi.get_playlist_items(
         playlist_id=YOUTUBE_PLAYLIST_ID, count=None)
 
