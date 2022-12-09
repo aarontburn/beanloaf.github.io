@@ -55,8 +55,8 @@ def main():
     if not hasAuth():
         return
 
-    print('\033[95m' + "Program made by @beanloaf to help make https://beanloaf.github.io/ easier to update." + '\033[0m')
-    print('\033[95m' + "To list all commands, type in, 'help'." + '\033[0m')
+    SYS("Program made by @beanloaf to help make https://beanloaf.github.io/ easier to update.")
+    SYS("To list all commands, type in, 'help'.")
 
     hasNext = True
 
@@ -314,7 +314,7 @@ def modifyJson() -> None:
     # Uses YouTube API
     yApi = pyy(api_key=auth["youtube"]["key"])
     yResults = yApi.get_playlist_items(
-        playlist_id=YOUTUBE_PLAYLIST_ID, count=None)
+        playlist_id=YOUTUBE_PLAYLIST_ID, count=None).to_dict()
 
     if not os.path.exists("library/spotifyReleases.json"):
         WARN("spotifyReleases.json doesn't exist; creating new file...")
@@ -331,7 +331,7 @@ def modifyJson() -> None:
         WARN("Found youtubeReleases.json. Updating the file...")
         os.remove("library/youtubeReleases.json")
     with open("library/youtubeReleases.json", "a+") as a:
-        a.write(json.dumps(yResults.to_dict()))
+        a.write(json.dumps(yResults))
 
     if not os.path.exists("library/songData.json"):
         yHasSong = False
@@ -340,15 +340,15 @@ def modifyJson() -> None:
         d.write("[")
 
         # First object
-        for i in range(len(yResults.items)):
+        for i in range(len(yResults["items"])):
             songName = sResults["items"][0]["name"]
             songImg = sResults["items"][0]["images"][0]["url"]
             spotifyURL = sResults["items"][0]["uri"]
             youtubeURL = "https://youtube.com/@beanloaf"
             appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
-            if sResults["items"][0]["name"] in yResults.items[i].to_dict()["snippet"]["title"]:
+            if sResults["items"][0]["name"] in yResults["items"][i]["snippet"]["title"]:
                 youtubeURL = "https://youtu.be/" + \
-                    yResults.items[i].to_dict()["contentDetails"]["videoId"]
+                    yResults["items"][i]["contentDetails"]["videoId"]
                 yHasSong = True
                 break
 
@@ -374,10 +374,9 @@ def modifyJson() -> None:
             youtubeURL = "https://youtube.com/@beanloaf"
             appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
             for j in range(len(yResults.items)):
-                if sResults["items"][i]["name"] in yResults.items[j].to_dict()["snippet"]["title"]:
+                if sResults["items"][i]["name"] in yResults["items"][j]["snippet"]["title"]:
                     youtubeURL = "https://youtu.be/" + \
-                        yResults.items[j].to_dict(
-                        )["contentDetails"]["videoId"]
+                        yResults["items"][j]["contentDetails"]["videoId"]
                     yHasSong = True
                     break
 
@@ -426,14 +425,14 @@ or delete songData.json and run 'json' to regenerate file.")
                      " not found in songData.json. Attempting to add entry...")
                 numAddedEntries += 1
 
-                for j in range(len(yResults.items)):
-                    if sResults["items"][i]["name"] in yResults.items[j].to_dict()["snippet"]["title"]:
+                for j in range(len(yResults["items"])):
+                    if sResults["items"][i]["name"] in yResults["items"][j]["snippet"]["title"]:
                         _song = {
                             "name": sResults["items"][i]["name"],
                             "songImg": sResults["items"][i]["images"][0]["url"],
                             "spotifyURL": sResults["items"][i]["uri"],
-                            "youtubeURL": "https://youtu.be/" + yResults.items[j].to_dict()["contentDetails"]["videoId"],
-                            "appleURL": ""
+                            "youtubeURL": "https://youtu.be/" + yResults["items"][j]["contentDetails"]["videoId"],
+                            "appleURL": "https://music.apple.com/us/artist/beanloaf/1579680943"
                         }
 
                         songDatab = open("library/songData.json", "ab+")
@@ -475,6 +474,9 @@ def OPTION(s: str) -> None:
 
 def ERROR(s: str) -> None:
     print('\033[91m' + s + '\033[0m')
+
+def SYS(s: str) -> None:
+    print('\033[95m' + s + '\033[0m')
 
 
 """
