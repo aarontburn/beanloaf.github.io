@@ -1,1 +1,627 @@
-{"kind": "youtube#playlistItemListResponse", "etag": "Pp0ScCHsk3FtCldt8bROH9zFhZY", "nextPageToken": null, "prevPageToken": null, "pageInfo": {"totalResults": 11, "resultsPerPage": 50}, "items": [{"kind": "youtube#playlistItem", "etag": "JZy8naSpuFCZEG2RK1DbQ2FiX2w", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My41Mzk2QTAxMTkzNDk4MDhF", "snippet": {"publishedAt": "2022-11-26T05:54:59Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Endless Cycle \u2744\ufe0f  (EP)", "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nTracklist:\n0:00 Twilight \n2:55 Aurora\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n#chill #lofi #sleep #study #music", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 0, "resourceId": {"kind": "youtube#video", "videoId": "CWJ5wqO7keQ", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "CWJ5wqO7keQ", "note": null, "videoPublishedAt": "2022-12-01T05:53:02Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "MJQ02j7KS8lyuQavBNGAOjTLiPg", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My5EMEEwRUY5M0RDRTU3NDJC", "snippet": {"publishedAt": "2022-11-24T04:23:46Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Twilight", "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n#chill #lofi #sleep #study #music", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/ah26vXD9U9g/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/ah26vXD9U9g/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/ah26vXD9U9g/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/ah26vXD9U9g/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/ah26vXD9U9g/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 1, "resourceId": {"kind": "youtube#video", "videoId": "ah26vXD9U9g", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "ah26vXD9U9g", "note": null, "videoPublishedAt": "2022-12-01T05:53:10Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "orhWEktM2sn0Tgf97mbpkMsTGVs", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My45ODRDNTg0QjA4NkFBNkQy", "snippet": {"publishedAt": "2022-11-24T04:32:39Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Aurora", "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n#chill #lofi #study #music", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 2, "resourceId": {"kind": "youtube#video", "videoId": "U8QDdoJyQ_Q", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "U8QDdoJyQ_Q", "note": null, "videoPublishedAt": "2022-12-01T05:53:05Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "RTi684_Zo-0qrcDtTTIVcWCnkjs", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4zMDg5MkQ5MEVDMEM1NTg2", "snippet": {"publishedAt": "2022-11-26T05:52:06Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "\ud835\ude8b\ud835\ude8e\ud835\ude8a\ud835\ude97\ud835\ude95\ud835\ude98\ud835\ude8a\ud835\ude8f - \ud835\ude9d\ud835\udea0\ud835\ude92\ud835\ude95\ud835\ude92\ud835\ude90\ud835\ude91\ud835\ude9d \ufe5d \ud835\ude9c\ud835\ude95\ud835\ude98\ud835\udea0\ud835\ude8e\ud835\ude8d + \ud835\ude9b\ud835\ude8e\ud835\ude9f\ud835\ude8e\ud835\ude9b\ud835\ude8b\ud835\ude8e\ud835\ude8d  \ufe5e", "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n- note: this release is youtube only\n\n#chill #lofi #sleep #study #music", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/eH3cU5dr2f4/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/eH3cU5dr2f4/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/eH3cU5dr2f4/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/eH3cU5dr2f4/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/eH3cU5dr2f4/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 3, "resourceId": {"kind": "youtube#video", "videoId": "eH3cU5dr2f4", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "eH3cU5dr2f4", "note": null, "videoPublishedAt": "2022-12-01T05:53:12Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "A3niNq1QHrLSmSdQTAfWrBgrDkA", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My40NzZCMERDMjVEN0RFRThB", "snippet": {"publishedAt": "2022-09-15T02:58:48Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Sunset", "description": "Stream:\nhttps://beanloaf.github.io/songs/-Sunset\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/VhrX0po9gz8/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/VhrX0po9gz8/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/VhrX0po9gz8/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/VhrX0po9gz8/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/VhrX0po9gz8/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 4, "resourceId": {"kind": "youtube#video", "videoId": "VhrX0po9gz8", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "VhrX0po9gz8", "note": null, "videoPublishedAt": "2022-09-27T07:00:10Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "8iH6INKi5V9hO8vGeJf4kozVlAg", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My5DQUNERDQ2NkIzRUQxNTY1", "snippet": {"publishedAt": "2022-08-16T20:18:20Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Forest Outskirts", "description": "Stream:\nhttps://beanloaf.github.io/songs/-Forest%20Outskirts\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/yQJHe0ADhGo/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/yQJHe0ADhGo/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/yQJHe0ADhGo/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/yQJHe0ADhGo/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/yQJHe0ADhGo/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 5, "resourceId": {"kind": "youtube#video", "videoId": "yQJHe0ADhGo", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "yQJHe0ADhGo", "note": null, "videoPublishedAt": "2022-08-26T17:25:06Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "ZwyCtmtG5MI3vvlsoI6uTyik9_8", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My41NkI0NEY2RDEwNTU3Q0M2", "snippet": {"publishedAt": "2021-09-27T01:30:29Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Eternity (lofi remix of eternity - memory of light waves from ffx-2)", "description": "lofi remix of eternity - memory of lightwaves from ffx-2\n\nStream:\nhttps://beanloaf.github.io/songs/-Eternity\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/MmKnPviPR5E/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/MmKnPviPR5E/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/MmKnPviPR5E/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/MmKnPviPR5E/sddefault.jpg", "width": 640, "height": 480}, "maxres": null}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 6, "resourceId": {"kind": "youtube#video", "videoId": "MmKnPviPR5E", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "MmKnPviPR5E", "note": null, "videoPublishedAt": "2021-08-05T16:59:00Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "yhQ4cWeABbVgdKjoPj7DyIDd52Y", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4yODlGNEE0NkRGMEEzMEQy", "snippet": {"publishedAt": "2021-09-27T01:30:29Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Mint", "description": "Stream:\nhttps://beanloaf.github.io/songs/-Mint\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/claJMK77Tcc/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/claJMK77Tcc/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/claJMK77Tcc/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/claJMK77Tcc/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/claJMK77Tcc/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 7, "resourceId": {"kind": "youtube#video", "videoId": "claJMK77Tcc", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "claJMK77Tcc", "note": null, "videoPublishedAt": "2021-06-13T06:27:15Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "v97X14E7yLiPSW3L5jXDv2OEKkM", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4wMTcyMDhGQUE4NTIzM0Y5", "snippet": {"publishedAt": "2021-09-27T01:30:29Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Cascade", "description": "Stream:\nhttps://beanloaf.github.io/songs/-Cascade\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/track/6ai4imzxOZl7GDIIF9hkbv?si=L-VORwkVQKivWLKdt_oenA\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/gAknC6EOXVw/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/gAknC6EOXVw/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/gAknC6EOXVw/hqdefault.jpg", "width": 480, "height": 360}, "standard": null, "maxres": null}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 8, "resourceId": {"kind": "youtube#video", "videoId": "gAknC6EOXVw", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "gAknC6EOXVw", "note": null, "videoPublishedAt": "2021-06-09T06:52:25Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "7cLLjLjpFXqmxF8fcs38qiBkGwo", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4wOTA3OTZBNzVEMTUzOTMy", "snippet": {"publishedAt": "2021-09-27T01:30:29Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Flora", "description": "Stream:\nhttps://beanloaf.github.io/songs/-Flora\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/3ce5ewgxeRs/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/3ce5ewgxeRs/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/3ce5ewgxeRs/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/3ce5ewgxeRs/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/3ce5ewgxeRs/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 9, "resourceId": {"kind": "youtube#video", "videoId": "3ce5ewgxeRs", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "3ce5ewgxeRs", "note": null, "videoPublishedAt": "2021-06-09T06:52:08Z"}, "status": {"privacyStatus": "public"}}, {"kind": "youtube#playlistItem", "etag": "zidV0__hiYNZAMvy-B1hSyMbG0E", "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4xMkVGQjNCMUM1N0RFNEUx", "snippet": {"publishedAt": "2021-09-27T01:30:29Z", "channelId": "UCboD7TO6oSR0Sf4lx6rlurA", "title": "beanloaf - Trees", "description": "guess what im a music channel now\n\nStream:\nhttps://beanloaf.github.io/songs/-Trees\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7", "thumbnails": {"default": {"url": "https://i.ytimg.com/vi/JNlHrxoyBHU/default.jpg", "width": 120, "height": 90}, "medium": {"url": "https://i.ytimg.com/vi/JNlHrxoyBHU/mqdefault.jpg", "width": 320, "height": 180}, "high": {"url": "https://i.ytimg.com/vi/JNlHrxoyBHU/hqdefault.jpg", "width": 480, "height": 360}, "standard": {"url": "https://i.ytimg.com/vi/JNlHrxoyBHU/sddefault.jpg", "width": 640, "height": 480}, "maxres": {"url": "https://i.ytimg.com/vi/JNlHrxoyBHU/maxresdefault.jpg", "width": 1280, "height": 720}}, "channelTitle": "beanloaf", "videoOwnerChannelTitle": "beanloaf", "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA", "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3", "position": 10, "resourceId": {"kind": "youtube#video", "videoId": "JNlHrxoyBHU", "channelId": null, "playlistId": null}}, "contentDetails": {"videoId": "JNlHrxoyBHU", "note": null, "videoPublishedAt": "2021-05-13T21:06:05Z"}, "status": {"privacyStatus": "public"}}]}
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "Pp0ScCHsk3FtCldt8bROH9zFhZY",
+    "nextPageToken": null,
+    "prevPageToken": null,
+    "pageInfo": {
+        "totalResults": 11,
+        "resultsPerPage": 50
+    },
+    "items": [
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "JZy8naSpuFCZEG2RK1DbQ2FiX2w",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My41Mzk2QTAxMTkzNDk4MDhF",
+            "snippet": {
+                "publishedAt": "2022-11-26T05:54:59Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Endless Cycle \u2744\ufe0f  (EP)",
+                "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nTracklist:\n0:00 Twilight \n2:55 Aurora\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n#chill #lofi #sleep #study #music",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/CWJ5wqO7keQ/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 0,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "CWJ5wqO7keQ",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "CWJ5wqO7keQ",
+                "note": null,
+                "videoPublishedAt": "2022-12-01T05:53:02Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "MJQ02j7KS8lyuQavBNGAOjTLiPg",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My5EMEEwRUY5M0RDRTU3NDJC",
+            "snippet": {
+                "publishedAt": "2022-11-24T04:23:46Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Twilight",
+                "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n#chill #lofi #sleep #study #music",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ah26vXD9U9g/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ah26vXD9U9g/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ah26vXD9U9g/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ah26vXD9U9g/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ah26vXD9U9g/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 1,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "ah26vXD9U9g",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "ah26vXD9U9g",
+                "note": null,
+                "videoPublishedAt": "2022-12-01T05:53:10Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "orhWEktM2sn0Tgf97mbpkMsTGVs",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My45ODRDNTg0QjA4NkFBNkQy",
+            "snippet": {
+                "publishedAt": "2022-11-24T04:32:39Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Aurora",
+                "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n#chill #lofi #study #music",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/U8QDdoJyQ_Q/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 2,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "U8QDdoJyQ_Q",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "U8QDdoJyQ_Q",
+                "note": null,
+                "videoPublishedAt": "2022-12-01T05:53:05Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "RTi684_Zo-0qrcDtTTIVcWCnkjs",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4zMDg5MkQ5MEVDMEM1NTg2",
+            "snippet": {
+                "publishedAt": "2022-11-26T05:52:06Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "\ud835\ude8b\ud835\ude8e\ud835\ude8a\ud835\ude97\ud835\ude95\ud835\ude98\ud835\ude8a\ud835\ude8f - \ud835\ude9d\ud835\udea0\ud835\ude92\ud835\ude95\ud835\ude92\ud835\ude90\ud835\ude91\ud835\ude9d \ufe5d \ud835\ude9c\ud835\ude95\ud835\ude98\ud835\udea0\ud835\ude8e\ud835\ude8d + \ud835\ude9b\ud835\ude8e\ud835\ude9f\ud835\ude8e\ud835\ude9b\ud835\ude8b\ud835\ude8e\ud835\ude8d  \ufe5e",
+                "description": "Stream Endless Cycle:\nhttps://beanloaf.github.io/songs/-Endless%20Cycle\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nNote: You are allowed to use my songs in videos or streams; just make sure to credit @beanloaf !\n\no7\n\n- note: this release is youtube only\n\n#chill #lofi #sleep #study #music",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/eH3cU5dr2f4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/eH3cU5dr2f4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/eH3cU5dr2f4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/eH3cU5dr2f4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/eH3cU5dr2f4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 3,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "eH3cU5dr2f4",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "eH3cU5dr2f4",
+                "note": null,
+                "videoPublishedAt": "2022-12-01T05:53:12Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "A3niNq1QHrLSmSdQTAfWrBgrDkA",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My40NzZCMERDMjVEN0RFRThB",
+            "snippet": {
+                "publishedAt": "2022-09-15T02:58:48Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Sunset",
+                "description": "Stream:\nhttps://beanloaf.github.io/songs/-Sunset\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VhrX0po9gz8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VhrX0po9gz8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VhrX0po9gz8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/VhrX0po9gz8/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/VhrX0po9gz8/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 4,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "VhrX0po9gz8",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "VhrX0po9gz8",
+                "note": null,
+                "videoPublishedAt": "2022-09-27T07:00:10Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "8iH6INKi5V9hO8vGeJf4kozVlAg",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My5DQUNERDQ2NkIzRUQxNTY1",
+            "snippet": {
+                "publishedAt": "2022-08-16T20:18:20Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Forest Outskirts",
+                "description": "Stream:\nhttps://beanloaf.github.io/songs/-Forest%20Outskirts\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/yQJHe0ADhGo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/yQJHe0ADhGo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/yQJHe0ADhGo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/yQJHe0ADhGo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/yQJHe0ADhGo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 5,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "yQJHe0ADhGo",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "yQJHe0ADhGo",
+                "note": null,
+                "videoPublishedAt": "2022-08-26T17:25:06Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "ZwyCtmtG5MI3vvlsoI6uTyik9_8",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My41NkI0NEY2RDEwNTU3Q0M2",
+            "snippet": {
+                "publishedAt": "2021-09-27T01:30:29Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Eternity (lofi remix of eternity - memory of light waves from ffx-2)",
+                "description": "lofi remix of eternity - memory of lightwaves from ffx-2\n\nStream:\nhttps://beanloaf.github.io/songs/-Eternity\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/MmKnPviPR5E/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/MmKnPviPR5E/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/MmKnPviPR5E/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/MmKnPviPR5E/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": null
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 6,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "MmKnPviPR5E",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "MmKnPviPR5E",
+                "note": null,
+                "videoPublishedAt": "2021-08-05T16:59:00Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "yhQ4cWeABbVgdKjoPj7DyIDd52Y",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4yODlGNEE0NkRGMEEzMEQy",
+            "snippet": {
+                "publishedAt": "2021-09-27T01:30:29Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Mint",
+                "description": "Stream:\nhttps://beanloaf.github.io/songs/-Mint\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/claJMK77Tcc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/claJMK77Tcc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/claJMK77Tcc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/claJMK77Tcc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/claJMK77Tcc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 7,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "claJMK77Tcc",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "claJMK77Tcc",
+                "note": null,
+                "videoPublishedAt": "2021-06-13T06:27:15Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "v97X14E7yLiPSW3L5jXDv2OEKkM",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4wMTcyMDhGQUE4NTIzM0Y5",
+            "snippet": {
+                "publishedAt": "2021-09-27T01:30:29Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Cascade",
+                "description": "Stream:\nhttps://beanloaf.github.io/songs/-Cascade\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/track/6ai4imzxOZl7GDIIF9hkbv?si=L-VORwkVQKivWLKdt_oenA\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/gAknC6EOXVw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/gAknC6EOXVw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/gAknC6EOXVw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": null,
+                    "maxres": null
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 8,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "gAknC6EOXVw",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "gAknC6EOXVw",
+                "note": null,
+                "videoPublishedAt": "2021-06-09T06:52:25Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "7cLLjLjpFXqmxF8fcs38qiBkGwo",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4wOTA3OTZBNzVEMTUzOTMy",
+            "snippet": {
+                "publishedAt": "2021-09-27T01:30:29Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Flora",
+                "description": "Stream:\nhttps://beanloaf.github.io/songs/-Flora\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3ce5ewgxeRs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3ce5ewgxeRs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3ce5ewgxeRs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3ce5ewgxeRs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3ce5ewgxeRs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 9,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "3ce5ewgxeRs",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "3ce5ewgxeRs",
+                "note": null,
+                "videoPublishedAt": "2021-06-09T06:52:08Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "zidV0__hiYNZAMvy-B1hSyMbG0E",
+            "id": "UExUbWJKMk1sR0Z1NkUySEdfWnBQbUZGM2MyOU5iV0Z0My4xMkVGQjNCMUM1N0RFNEUx",
+            "snippet": {
+                "publishedAt": "2021-09-27T01:30:29Z",
+                "channelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "title": "beanloaf - Trees",
+                "description": "guess what im a music channel now\n\nStream:\nhttps://beanloaf.github.io/songs/-Trees\n\nOr, a direct link to the Spotify release:\nhttps://open.spotify.com/artist/7ibBcoqSGVKT1sBynZvy5e?si=1YIF56maSbu5vFVXlu-yyg\n\nFor more information, visit:\nhttps://beanloaf.github.io/\n\nFollow for teasers, updates, and more:\nhttps://www.instagram.com/beanloafmusic/\n\no7",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JNlHrxoyBHU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JNlHrxoyBHU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JNlHrxoyBHU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/JNlHrxoyBHU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/JNlHrxoyBHU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "beanloaf",
+                "videoOwnerChannelTitle": "beanloaf",
+                "videoOwnerChannelId": "UCboD7TO6oSR0Sf4lx6rlurA",
+                "playlistId": "PLTmbJ2MlGFu6E2HG_ZpPmFF3c29NbWFt3",
+                "position": 10,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "JNlHrxoyBHU",
+                    "channelId": null,
+                    "playlistId": null
+                }
+            },
+            "contentDetails": {
+                "videoId": "JNlHrxoyBHU",
+                "note": null,
+                "videoPublishedAt": "2021-05-13T21:06:05Z"
+            },
+            "status": {
+                "privacyStatus": "public"
+            }
+        }
+    ]
+}

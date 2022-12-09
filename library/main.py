@@ -2,6 +2,7 @@
 # ----------Getting Started----------
 # REQUIREMENTS:
 #   - You will need both a YouTube API key and Spotify API key
+#
 # Run "main.py" and update "auth.json". Then, run "json" when prompted.
 #   - If "songData.json" doesn't exist, it will generate a new .json file
 #   - If "songData.json" DOES exist, it will compare "spotifyReleases.json" to it, and if
@@ -17,7 +18,9 @@
 # Push to Github to see changes
 #
 # ----------Updating After a New Release----------
-# After a new release is posted on Spotify, type in 'update' and follow the prompts.
+# After a new release is posted on Spotify:
+#   - Verify the YouTube release is in the appropiate playlist (beanloaf's Music playlist), then ->
+#   - Type in 'update' and follow the prompts.
 #
 # ----------Regenerating Pages----------
 # After updating the template, type in "regenerate", when prompted, to re-create all the song pages.
@@ -27,9 +30,10 @@
 #
 # ----------Listing Pages----------
 # To view song list, type in "list"
-#   - To list all songs that have a generated .html page, type in "1" when prompted
-#   - To list all songs within "spotifyReleases.json", type in "2" when prompted
-#   - To list all songs within "songData.json", type in "3" when prompted
+#   - To list all songs that have a generated .html page, type in "html" when prompted
+#   - To list all songs within "spotifyReleases.json", type in "spotify" when prompted
+#   - To list all songs within "youtubeReleases.json", type in "youtube" when prompted
+#   - To list all songs within "songData.json", type in "songData" when prompted
 # ------------------------------------------
 import json
 import os
@@ -252,23 +256,30 @@ def listSongs() -> None:
     """
     Displays all songs listed under the 'library/' directory, inside 'songData.json', or inside 'spotifyReleases.json'.
     """
-    OPTION("To list all songs that have a .html page, type in '1'.")
-    OPTION("To list all songs listed in the Spotify .json, type in '2'.")
-    OPTION("To list all songs listed in songData.json, type in '3'.")
+    OPTION("To list all songs that have a .html page, type in 'html'.")
+    OPTION("To list all songs listed in the spotifyReleases.json, type in 'spotify'.")
+    OPTION("To list all songs listed in the youtubeReleases.json, type in 'youtube'.")
+    OPTION("To list all songs listed in songData.json, type in 'songData'.")
 
     d = input("Enter a number: ")
 
-    if d == "1":
+    if d == "html":
         for filename in os.listdir('library'):
             if filename[0] == "-":
                 print(filename)
-    elif d == "2":
+    elif d == "spotify":
         with open('library/spotifyReleases.json', 'r') as d:
-            _data = json.load(d)
+            data = json.load(d)
 
-        for i in range(len(_data["items"])):
-            print(_data["items"][i]["name"])
-    elif d == "3":
+        for i in range(len(data["items"])):
+            print(data["items"][i]["name"])
+    elif d == "youtube":
+        with open('library/youtubeReleases.json', 'r') as d:
+            data = json.load(d)
+
+        for i in range(len(data.items)):
+            print(data.items[i].to_dict()["snippet"]["title"])
+    elif d == "songData":
         with open('library/songData.json', 'r') as f:
             data = json.load(f)
         for i in range(len(data)):
