@@ -165,3 +165,7 @@ ul.navf a {
 	margin: 10px;
 
 }
+
+.album-cover {
+	border-radius: 0.75rem;
+}

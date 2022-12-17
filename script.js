@@ -37,7 +37,7 @@ function getAllReleases() {
         }
         s += `<td><h3 style='font - size: 20px; margin: 10px'> ${responseJson.items[i].name} </h3>`;
 
-        s += `<a href='library/-${responseJson.items[i].name}'><img src='${responseJson.items[i].images[0].url}' width=275px /></a>`;
+        s += `<a href='library/-${responseJson.items[i].name}'><img src='${responseJson.items[i].images[0].url}' class="album-cover" width=275px /></a>`;
     }
 
     document.getElementById("discography").insertAdjacentHTML("beforeend", s);
@@ -49,7 +49,7 @@ function getAllReleases() {
             b += "</tr><tr>";
         }
         b += `<td><h3 style='font - size: 20px; margin: 10px'> ${bonusList[i].displayName}</h3>`;
-        b += `<a href='${bonusList[i].url}' target='_blank'><img src='${bonusList[i].img}' width=275px /></a>`;
+        b += `<a href='${bonusList[i].url}' target='_blank'><img src='${bonusList[i].img}' class="album-cover" width=275px /></a>`;
     }
 
     document.getElementById("bonus").insertAdjacentHTML("beforeend", b);

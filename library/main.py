@@ -68,7 +68,7 @@ def main():
             generateSongs(True)
         elif d == "regenerate":
             deleteAllSongs()
-            generateSongs()
+            generateSongs(False)
         elif d == "deleteAll":
             deleteAllSongs()
         elif d == "list":
@@ -373,7 +373,7 @@ def modifyJson() -> None:
             spotifyURL = sResults["items"][i]["uri"]
             youtubeURL = "https://youtube.com/@beanloaf"
             appleURL = "https://music.apple.com/us/artist/beanloaf/1579680943"
-            for j in range(len(yResults.items)):
+            for j in range(len(yResults["items"])):
                 if sResults["items"][i]["name"] in yResults["items"][j]["snippet"]["title"]:
                     youtubeURL = "https://youtu.be/" + \
                         yResults["items"][j]["contentDetails"]["videoId"]
