@@ -1,5 +1,4 @@
-import j from '/library/spotifyReleases.json';
-var responseJson = JSON.parse(j);
+import responseJson from '/library/spotifyReleases.json' assert {type: 'json'};
 
 var path = window.location.pathname;
 var page = path.split("/").pop();
