@@ -55,12 +55,10 @@ def main():
     if not hasAuth():
         return
 
-    SYS("Program made by @beanloaf to help make https://beanloaf.github.io/ easier to update.")
+    SYS("Program made by @beanloaf to help make https://beanloaf.xyz/ easier to update.")
     SYS("To list all commands, type in, 'help'.")
 
-    hasNext = True
-
-    while hasNext:
+    while True:
         d = input('\033[96m' + "Enter a command: " + '\033[0m')
         if d == "help":
             doc()
@@ -474,6 +472,7 @@ def OPTION(s: str) -> None:
 
 def ERROR(s: str) -> None:
     print('\033[91m' + s + '\033[0m')
+
 
 def SYS(s: str) -> None:
     print('\033[95m' + s + '\033[0m')
