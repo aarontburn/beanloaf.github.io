@@ -65,7 +65,7 @@ function BonusReleases() { // Put specific tracks here
 }
 
 
-function Teaser() {
+function ATeaser() {
     let active = true; // Set to false to disable entire catagory
     //-----------------
     // Change parameters of the teaser track

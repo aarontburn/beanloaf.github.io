@@ -82,8 +82,33 @@
 			<br>
 
 			<div id="teaser">
-				<script src="script.js"></script>
-				<script>Teaser();</script>
+				<script>
+					function Teaser() {
+						let active = true; // Set to false to disable entire catagory
+						//-----------------
+						// Change parameters of the teaser track
+						const teaser = {
+							displayName: "A Dream",
+							releaseDate: "May 11th, 2023",
+							img: "res/a_dream_cover_art.jpg"
+						}
+
+						if (active) {
+							let s = "";
+							s += '<div class="content">'
+							s += '<h3 style="font-size: 35px; margin: 10px">Coming soon . . . </h3>'
+							s += `<h3 style="font-size: 30px; margin: 10px">${teaser.displayName}</h3>`;
+							s += `<img src="${teaser.img}" width=350px />`;
+							s += `<p>${teaser.releaseDate}</p>`;
+							s += '</div>'
+
+							document.getElementById("teaser").insertAdjacentHTML("beforeend", s);
+						}
+
+					}
+					Teaser();
+
+				</script>
 			</div>
 
 			<div id="footer"></div>
