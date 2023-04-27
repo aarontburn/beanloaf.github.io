@@ -66,13 +66,13 @@ function BonusReleases() { // Put specific tracks here
 
 
 function Teaser() {
-    let active = false; // Set to false to disable entire catagory
+    let active = true; // Set to false to disable entire catagory
     //-----------------
     // Change parameters of the teaser track
     const teaser = {
-        displayName: "",
-        releaseDate: "",
-        img: ""
+        displayName: "A Dream",
+        releaseDate: "May 11th, 2023",
+        img: "res/a_dream_cover_art.jpg"
     }
 
     if (active) {
