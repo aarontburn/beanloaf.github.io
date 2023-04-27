@@ -21,7 +21,7 @@ or reach out on Instagram.
 o7
 
 ---
-# Cool Features
+# Features
 Uses a Python script to access both the Spotify API and YouTube API to autonomously edit the song library and the latest release. 
 
 The code is located at library/main.py
