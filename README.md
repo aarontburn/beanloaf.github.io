@@ -1,7 +1,7 @@
 # beanloafmusicwebpage
 artist page for @beanloaf by @beanloaf
 
-https://beanloaf.github.io
+https://beanloaf.xyz
 
 Youtube:
 https://www.youtube.com/@beanloaf
