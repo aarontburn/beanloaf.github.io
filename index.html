@@ -23,6 +23,36 @@
 		<div id="content-wrap">
 			<div id="header"></div>
 
+			<div id="teaser">
+				<script>
+					let active = true; // Set to false to disable entire catagory
+					//-----------------
+					// Change parameters of the teaser track
+					const teaser = {
+						displayName: "A Dream",
+						releaseDate: "May 11th, 2023",
+						img: "res/a_dream_cover_art.jpg"
+					}
+
+					if (active) {
+						let s = "";
+						s += '<div class="content">'
+						s += '<h3 style="font-size: 35px; margin: 10px">Coming soon . . . </h3>'
+						s += `<h3 style="font-size: 30px; margin: 10px">${teaser.displayName}</h3>`;
+						s += `<img src="${teaser.img}" width=500px />`;
+						s += `<p>${teaser.releaseDate}</p>`;
+						s += '</div>'
+
+						document.getElementById("teaser").insertAdjacentHTML("beforeend", s);
+					}
+
+				</script>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+
 			<div class="content">
 
 				<h3 style="font-size: 35px; margin: 10px">Latest Release:</h3>
@@ -77,35 +107,8 @@
 				<br>
 
 			</div>
-			<br>
-			<br>
-			<br>
 
-			<div id="teaser">
-				<script>
-					let active = true; // Set to false to disable entire catagory
-					//-----------------
-					// Change parameters of the teaser track
-					const teaser = {
-						displayName: "A Dream",
-						releaseDate: "May 11th, 2023",
-						img: "res/a_dream_cover_art.jpg"
-					}
-
-					if (active) {
-						let s = "";
-						s += '<div class="content">'
-						s += '<h3 style="font-size: 35px; margin: 10px">Coming soon . . . </h3>'
-						s += `<h3 style="font-size: 30px; margin: 10px">${teaser.displayName}</h3>`;
-						s += `<img src="${teaser.img}" width=500px />`;
-						s += `<p>${teaser.releaseDate}</p>`;
-						s += '</div>'
-
-						document.getElementById("teaser").insertAdjacentHTML("beforeend", s);
-					}
-
-				</script>
-			</div>
+			
 
 			<div id="footer"></div>
 		</div>
