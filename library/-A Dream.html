@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title id="title">beanloaf - A Dream</title>
+    <link rel="icon" type="image/x-icon" href="../res/favicon.ico">
+    <script type="module" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script>
+        $(function () {
+                $("#footer").load("../footer.html");
+                $("#header").load("../header.html");
+            });
+    </script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="header"></div>
+            <div class="content">
+                <table class="songPage">
+                    <tr>
+                        <td>
+                            <h3 style="font-size: 35px; margin: 10px">A Dream</h3>
+                            <h3 id="latestReleaseName" style="font-size: 30px; margin: 10px"></h3>
+                            <img id="latestReleaseImg" class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2736d330558f03910131bc7f0ec" width=350px />
+                            <br><br>
+                            <p style="margin:10px">Listen now:</p>
+
+
+                            <a id="spotifyLink" href="spotify:album:5RoW8KmBxjffgUXiw0u9ql" target="_blank">
+                                <button class="sButton"
+                                    style="background-color: #1DB954; padding: 0px;">Spotify</button>
+                            </a>
+                            <br><br>
+
+                            <a id="youtubeLink" href="https://youtu.be/OnyEPJP0y5w" target="_blank">
+                                <button class="sButton"
+                                    style="background-color: #ee0000; padding: 0px;">Youtube</button>
+                            </a>
+                            <br><br>
+
+                            <a id="appleLink" href="https://music.apple.com/us/artist/beanloaf/1579680943" target="_blank">
+                                <button class="sButton" style="background-color: #a0a0a0; padding: 0px;">Apple
+                                    Music</button>
+                            </a>
+                            <br><br>
+
+                        </td>
+                        <td>
+
+                            <h4 style="font-size: 35px; margin: 10px">Song Info:</h4>
+                            <div class="songInfo">
+                                <p>Release Name:</p>
+                                <p id="releaseName">A Dream (Single)</p>
+                            </div>
+
+                            <div class="songInfo">
+                                <p>Release Date:</p>
+                                <p id="releaseDate">05/11/2023</p>
+                            </div>
+                            <br>
+
+                            <h5 style="font-size: 30px; margin: 0px">Tracklist:</h5>
+                            <br>
+
+                            <iframe
+                                src="https://open.spotify.com/embed/album/5RoW8KmBxjffgUXiw0u9ql?utm_source=generator"
+                                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+                        </td>
+                    </tr>``
+                </table>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
