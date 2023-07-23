@@ -1,5 +1,5 @@
-# beanloafmusicwebpage
-artist page for @beanloaf by @beanloaf
+# Artist Page
+For @beanloaf by @beanloaf
 
 https://beanloaf.xyz
 
